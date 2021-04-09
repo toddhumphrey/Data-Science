@@ -89,3 +89,22 @@ kates_grade = grades.get("Kate", 0)
 
 grades["Tim"] = 99 #Replaces tim's grade with a 99 instead of a 95
 grades["Kate"] = 100 #adds a third entry for Kate
+
+#defaultdict is a default dictionary which is useful for when you are trying to look up a key that the dictionary does not contain.
+#It will add a value for it using a zero-argument function that you provide.
+#Useful when using dictionaries to collect results by some key and not needing to check each time if a key already exists
+from collections import defaultdict
+
+#dd_list = defaultdict(list()) #list() produces an empty list
+#dd_list[2].append(1) #Now dd_list contains {2: [1]}
+
+dd_dict = defaultdict(dict) #dict() produces an empty dictionary
+dd_dict["Joel"]["City"] = "Seattle" #{"Joel" : {"City": "Seattle"}}
+
+
+
+#Sort is a good way to maintain clean lists
+sort_list = [1, 2, 3, 4, 23, 5, 1 ,345, 23, 45, 5]
+sort_list.sort()
+
+print(sort_list)
