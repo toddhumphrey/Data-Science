@@ -108,3 +108,23 @@ sort_list = [1, 2, 3, 4, 23, 5, 1 ,345, 23, 45, 5]
 sort_list.sort()
 
 print(sort_list)
+
+
+
+
+#List comprehensions will be used a lot in the book.  Used to transform a list into anothe rlist by only choosing certain elements
+even_numbers = [x for x in range(5) if x % 2 == 0] #[0, 2, 4]
+
+#Can also be used to turn a list into a dictionary or a set
+square_dict = {x: x * x for x in range(5)} #{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+
+
+
+#Using tests: Important for making sure code doesn't fail, and when it does identifying where it is going wrong
+#In the book, we will use "assert"
+
+assert 1 + 1 == 2, "1 + 1 should equal 2, but it did not"
+#Assert is the test, the second piece is the message to display if the test fails
+
+
+
