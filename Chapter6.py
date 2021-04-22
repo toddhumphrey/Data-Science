@@ -25,8 +25,8 @@ for _ in range(10000):
     if older == Kid.GIRL or younger == Kid.GIRL:
         either_girl += 1
 
-print("P(both | older:", both_girls / older_girl)
-print("P(both | either:", both_girls / either_girl)
+print("P(both | older):", both_girls / older_girl)
+print("P(both | either):", both_girls / either_girl)
 
 def uniform_cdf(x: float) -> float:
     """Returns the probability that a uniform random variable is <= x"""
